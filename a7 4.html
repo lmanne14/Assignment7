@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Photo Gallery</title>
+  <style>
+    body {
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 32px;
+      font-weight: bold;
+      border-radius: 0 0 25px 25px;
+      margin-bottom: 20px;
+      border: 5px solid rgb(57, 87, 99);
+      border-top: none;
+    }
+
+    .gallery-container {
+      border: 5px solid black;
+      border-radius: 25px;
+      margin: 0 auto 40px auto;
+      width: max-content;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      justify-items: center;
+    }
+
+    .photo {
+      width: 200px;
+      height: 200px;
+      border: 2px solid #ccc;
+      border-radius: 25px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      background-color: white;
+    }
+
+    .photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 25px;
+      transition: transform 0.3s ease;
+    }
+
+    .photo img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">Photo Gallery</div>
+
+  <div class="gallery-container">
+    <div class="gallery">
+      <div class="photo"><img src="https://images.pexels.com/photos/28055747/pexels-photo-28055747.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Person with Book"></div>
+      <div class="photo"><img src="https://images.pexels.com/photos/5675677/pexels-photo-5675677.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Trees Sunset"></div>
+      <div class="photo"><img src="https://images.pexels.com/photos/941416/pexels-photo-941416.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Eiffel Tower"></div>
+      <div class="photo"><img src="https://images.pexels.com/photos/1957693/pexels-photo-1957693.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Branches Blur"></div>
+      <div class="photo"><img src="https://images.pexels.com/photos/30149463/pexels-photo-30149463.jpeg?auto=compress&cs=tinysrgb&w=700" alt="BMW Drifting"></div>
+      <div class="photo"><img src="https://images.pexels.com/photos/11080086/pexels-photo-11080086.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Airplanes in Hangar"></div>
+      <div class="photo"><img src="https://images.pexels.com/photos/3427774/pexels-photo-3427774.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Island Aerial"></div>
+      <div class="photo"><img src="https://images.pexels.com/photos/2150/sky-space-dark-galaxy.jpg?auto=compress&cs=tinysrgb&w=700" alt="Galaxy Wallpaper"></div>
+    </div>
+  </div>
+
+</body>
+</html>
